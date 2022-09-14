@@ -1,2 +1,2 @@
 import streamlit
-streamlit.tite('My Parents New Healthy Dine')
+streamlit.tite('My Parents New Healthy Diner')
