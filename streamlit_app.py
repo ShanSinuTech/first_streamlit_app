@@ -21,7 +21,7 @@ import requests
 def get_fruityvice_data(this_fruit_choice):
    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-   return fruitvice_normalized
+   return fruityvice_normalized
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
 streamlit.header("Fruityvice Fruit Advice!")
